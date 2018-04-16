@@ -1,0 +1,6 @@
+<view class="keystroke-translate">
+    <input class="search-input" focus placeholder="在此输入单词或句子" />
+    <view>
+
+    </view>
+</view>

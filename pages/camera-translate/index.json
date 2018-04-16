@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "九代翻译",
+  "usingComponents": {
+    "slider-select": "/components/slider-select/index"
+  }
+}

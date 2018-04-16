@@ -1,0 +1,17 @@
+<view class="camera-translate">
+    <view class="camera">
+        <camera device-position="back" flash="off"></camera>
+    </view>
+    <view class="operations">
+        <swiper indicator-dots="{{false}}" class="swiper">
+            <swiper-item>
+                单词
+            </swiper-item>
+            <swiper-item>
+                段落
+            </swiper-item>
+        </swiper>
+        <view class="take-word-btn">按住取词</view>
+        <slider-select></slider-select>
+    </view>
+</view>

@@ -1,0 +1,12 @@
+<view class="entry">
+    <view class="translate-entry">
+        <view class="btn-camera" bindtap="navCameraTranslatePage"></view>
+        <view class="gap">|</view>
+        <input
+            class="search-input"
+            placeholder="在此输入单词或句子"
+            bindfocus="navKeystrokeTranslatePage"
+        ></input>
+
+    </view>
+</view>

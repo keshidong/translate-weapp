@@ -1,0 +1,38 @@
+.camera-translate {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.camera {
+    display: flex;
+    flex-grow: 1;
+}
+
+.operations {
+    height: 100px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    flex-direction: column;
+}
+
+.take-word-btn {
+    height: 72px;
+    width: 72px;
+    font-size: 14px;
+    background: #4395ff80;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.swiper {
+    height: 100%;
+    width: 100%;
+}
