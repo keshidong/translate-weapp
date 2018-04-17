@@ -1,6 +1,34 @@
-<!-- 组件模板 -->
-<view class="wrapper" bindtouchstart="touchStart" bindtouchend="touchEnd">
-    <slot name="before"></slot>
-    <view>这里是组件的内部细节</view>
-    <slot name="after"></slot>
+<wxs module="m1">
+    var optionWidth = 72;
+
+    var computeActiveOptionIndex = function(options, value) {
+        return options.map(function (option) {
+            return option.value
+        }).indexOf(value);
+    }
+    var computeCommonOptionStyle = function() {
+        return 'width:' + optionWidth + 'px;';
+    }
+
+    var computeOptionsStyle = function(options, value) {
+    var leftOffset = ((options.length - 1) / 2
+    - computeActiveOptionIndex(options, value))*optionWidth;
+        return 'left:' + leftOffset + 'px;';
+    }
+    module.exports.computeCommonOptionStyle = computeCommonOptionStyle;
+    module.exports.computeOptionsStyle = computeOptionsStyle;
+</wxs>
+
+<view class="slider-select" bindtouchstart="touchStart" bindtouchend="touchEnd" style="{{style}}">
+    <view class="options" style="{{m1.computeOptionsStyle(options, value)}}">
+        <block wx:for="{{options}}" wx:for-index="idx" wx:for-item="option">
+            <view
+                class="option"
+                style="{{m1.computeCommonOptionStyle() }}"
+                bindtap="switchSelect"
+                data-value="{{option.value}}"
+            >{{option.text}}</view>
+        </block>
+    </view>
+    <slot></slot>
 </view>

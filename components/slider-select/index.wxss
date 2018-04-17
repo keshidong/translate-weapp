@@ -1,0 +1,22 @@
+.slider-select {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.options {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.option {
+    display: inline-flex;
+    color: #fff;
+    font-size: 14px;
+    justify-content: center;
+}
