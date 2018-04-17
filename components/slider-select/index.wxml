@@ -23,7 +23,7 @@
     <view class="options" style="{{m1.computeOptionsStyle(options, value)}}">
         <block wx:for="{{options}}" wx:for-index="idx" wx:for-item="option">
             <view
-                class="option"
+                class="option {{option.value === value ? 'active' : ''}}"
                 style="{{m1.computeCommonOptionStyle() }}"
                 bindtap="switchSelect"
                 data-value="{{option.value}}"
