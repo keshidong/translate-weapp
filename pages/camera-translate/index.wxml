@@ -7,7 +7,11 @@
             options="{{[{value: 1, text: '取词翻译'}, {value: 2, text: '段落翻译'}]}}"
             style="width: 100%; height: 100%;"
         >
-            <view class="take-word-btn">按住取词</view>
+            <view
+                class="take-word-btn"
+                catchtouchstart="startRecord"
+                catchtouchend="stopRecord"
+            >按住取词</view>
         </slider-select>
     </view>
 </view>
