@@ -1,7 +1,13 @@
 <view class="camera-translate">
     <view class="camera">
         <camera device-position="back" flash="off"></camera>
-        <div class="viewport" />
+        <view class="viewport">
+            <view class="corner-lt" />
+            <view class="corner-lb" />
+            <view class="corner-rt" />
+            <view class="corner-rb" />
+            <view class="center-icon" />
+        </view>
     </view>
     <view class="operations">
         <slider-select
