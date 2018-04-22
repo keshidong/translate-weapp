@@ -1,6 +1,7 @@
 <view class="camera-translate">
     <view class="camera">
         <camera device-position="back" flash="off"></camera>
+        <div class="viewport" />
     </view>
     <view class="operations">
         <slider-select
@@ -9,8 +10,8 @@
         >
             <view
                 class="take-word-btn"
-                catchtouchstart="startRecord"
-                catchtouchend="stopRecord"
+                catchtouchstart="startCollectPhoto"
+                catchtouchend="stopCollectPhoto"
             >按住取词</view>
         </slider-select>
     </view>

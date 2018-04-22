@@ -7,6 +7,7 @@
 .camera {
     display: flex;
     flex-grow: 1;
+    justify-content: center;
 }
 
 .operations {
@@ -23,7 +24,7 @@
     height: 72px;
     width: 72px;
     font-size: 14px;
-    background: #4395ff80;
+    background: #4395ff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,4 +35,22 @@
 .slider-select {
     height: 100%;
     width: 100%;
+}
+
+.mask {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    background: black;
+    display: flex;
+    justify-content: center;
+}
+
+.viewport {
+    position: absolute;
+    width: 100px;
+    height: 24px;
+    margin-top: 60px;
+    box-shadow: 0 0 2000px 2000px rgba(0, 0, 0, 0.6);
 }
