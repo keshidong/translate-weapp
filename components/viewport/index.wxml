@@ -1,0 +1,7 @@
+<view class="viewport {{type}}">
+    <view class="corner-lt" />
+    <view class="corner-lb" />
+    <view class="corner-rt" />
+    <view class="corner-rb" />
+    <view class="center-icon" />
+</view>
