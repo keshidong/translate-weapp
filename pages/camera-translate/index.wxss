@@ -50,51 +50,7 @@
 
 .viewport {
     position: absolute;
-    top: 0;
+    top: 60px;
     width: 100px;
-    height: 24px;
-    margin-top: 60px;
-    box-shadow: 0 0 2000px 2000px rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.corner-lt,
-.corner-lb,
-.corner-rt,
-.corner-rb {
-    position: absolute;
-    height: 6px;
-    width: 6px;
-    border: 2px solid #fff;
-}
-
-.corner-lt {
-    left: 0;
-    top: 0;
-    border-bottom-color: transparent;
-    border-right-color: transparent;
-}
-
-.corner-lb {
-    left: 0;
-    bottom: 0;
-    border-top-color: transparent;
-    border-right-color: transparent;
-
-}
-
-.corner-rt {
-    right: 0;
-    top: 0;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-}
-
-.corner-rb {
-    right: 0;
-    bottom: 0;
-    border-top-color: transparent;
-    border-left-color: transparent;
+    height: 30px;
 }
