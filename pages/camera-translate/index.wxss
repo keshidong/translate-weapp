@@ -54,3 +54,8 @@
     width: 100px;
     height: 30px;
 }
+
+.image-cropper {
+    position: absolute;
+    left: -10000px;
+}

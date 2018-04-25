@@ -1,7 +1,7 @@
 <view class="camera-translate">
     <view class="camera">
         <camera device-position="back" flash="off"></camera>
-        <viewport type="LOCKED" class="viewport" />
+        <viewport type="LOCKED" class="viewport" id="viewport" />
     </view>
     <view class="operations">
         <slider-select
@@ -15,4 +15,6 @@
             >按住取词</view>
         </slider-select>
     </view>
+    <image style="height: 100px" src="{{tempImgUrl}}" />
+    <canvas canvas-id="image-cropper" class="image-cropper"></canvas>
 </view>
