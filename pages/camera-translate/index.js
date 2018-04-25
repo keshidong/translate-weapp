@@ -1,6 +1,7 @@
 Page({
     data: {
         tempImgUrl: '',
+        mode: 'WORD',
     },
     onLoad() {
         this.__cameraContext = wx.createCameraContext();
